@@ -1,0 +1,14 @@
+{
+  "name": "node-live-stream-h5-flv-demo",
+  "version": "1.0.0",
+  "main": "wsplay.mjs",
+  "scripts": {
+    "dev": "node wsplay.mjs rtmp://ns8.indexforce.com/home/mystream"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ffmpeg-static": "^5.1.0",
+    "http-server": "^14.1.1",
+    "node-live-stream-h5-flv": "^1.0.2"
+  }
+}

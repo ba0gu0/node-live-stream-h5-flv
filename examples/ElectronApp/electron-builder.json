@@ -1,0 +1,43 @@
+{
+  "appId": "YourAppID",
+  "asar": true,
+  "directories": {
+    "output": "release/${version}"
+  },
+  "files": [
+    "dist-electron",
+    "dist"
+  ],
+  "mac": {
+    "artifactName": "${productName}_mac_${version}.${ext}",
+    "icon": "public/app.icns",
+    "target": {
+      "target": "zip",
+      "arch": [
+        "arm64",
+        "x64"
+      ]
+    }
+  },
+  "win": {
+    "artifactName": "${productName}_win_${version}.${ext}",
+    "icon": "public/app.ico",
+    "target": {
+      "target": "zip",
+      "arch": [
+        "x64"
+      ]
+    }
+  },
+  "linux": {
+    "artifactName": "${productName}_linux_${version}.${ext}",
+    "icon": "public/app.png",
+    "target": {
+      "target": "AppImage",
+      "arch": [
+        "arm64",
+        "x64"
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "node-live-stream-h5-flv",
+  "version": "1.0.2",
+  "description": "Convert any live stream to flv for playback.",
+  "main": "dist/node-live-stream-h5-flv.cjs",
+  "module": "dist/node-live-stream-h5-flv.mjs",
+  "exports": {
+    "require": "./dist/node-live-stream-h5-flv.cjs",
+    "import": "./dist/node-live-stream-h5-flv.mjs"
+  },
+  "scripts": {
+    "test": "mocha --timeout 20000 test/*.mjs",
+    "nodeAppDemo": "cd examples/NodeApp/ && npm run dev",
+    "nodeElectronDemo": "cd examples/ElectronApp && npm run dev",
+    "build": "rollup -c rollup.config.mjs"
+  },
+  "repository": "https://www.github.com/ba0gu0/node-live-stream-h5-flv.git",
+  "author": "BaoGuo",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "ffmpeg-static": "^5.1.0",
+    "mocha": "^10.1.0",
+    "rollup": "^3.3.0"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "dist/node-live-stream-h5-flv.cjs",
+    "dist/node-live-stream-h5-flv.mjs"
+  ]
+}

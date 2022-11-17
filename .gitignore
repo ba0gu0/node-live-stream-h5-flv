@@ -1,0 +1,9 @@
+/.idea/
+/node_modules/
+/examples/ElectronApp/node_modules/
+/examples/ElectronApp/dist-electron/
+/examples/NodeApp/node_modules/
+yarn.lock
+.DS_Store
+/examples/ElectronApp/dist/
+/examples/ElectronApp/release/

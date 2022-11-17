@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script src="./mpegts.js"></script>
+    <center>
+    <video style="height: 720px; width: 1280px" controls id="videoWrapper" ></video>
+    </center>
+    <script>
+
+    videoWrapper = document.getElementById('videoWrapper')
+    if (mpegts.getFeatureList().mseLivePlayback) {
+        player = mpegts.createPlayer({
+            type: 'flv',  // could also be mpegts, m2ts, flv
+            isLive: true,
+            url: 'ws://127.0.0.1:64321/live'
+        });
+        player.attachMediaElement(videoWrapper);
+        player.load();
+        // player.play();
+    }
+    </script>
+
+</body>
+</html>
