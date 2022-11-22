@@ -4,8 +4,6 @@ import GetStreamInfo from "./getStreamInfo.mjs"
 import FFmpegForwardStream from "./ffmpegForwardStream.mjs"
 import WebSocket, { WebSocketServer } from 'ws';
 
-const STREAM_MAGIC_BYTES = 'rtsp'
-
 export default class LiveStream extends EventEmitter {
     constructor(options) {
         super();

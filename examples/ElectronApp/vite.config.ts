@@ -57,6 +57,11 @@ export default defineConfig({
     // Use Node.js API in the Renderer-process
     renderer({
       nodeIntegration: true,
+      optimizeDeps: {
+        include: [
+            "node-live-stream-h5-flv"
+        ]
+      }
     }),
   ],
   server: process.env.VSCODE_DEBUG ? (() => {
