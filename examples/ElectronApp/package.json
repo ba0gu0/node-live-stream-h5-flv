@@ -12,10 +12,10 @@
     "node": "^14.18.0 || >=16.0.0"
   },
   "dependencies": {
+    "node-live-stream-h5-flv": "^1.0.3",
     "ffmpeg-static": "^5.1.0"
   },
   "devDependencies": {
-    "node-live-stream-h5-flv": "^1.0.3",
     "mpegts.js": "^1.6.10",
     "@vitejs/plugin-vue": "^3.1.2",
     "electron": "^21.1.0",
