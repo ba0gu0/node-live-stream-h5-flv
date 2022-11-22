@@ -1,5 +1,5 @@
 {
-  "appId": "YourAppID",
+  "appId": "com.demo.app",
   "asar": true,
   "directories": {
     "output": "release/${version}"

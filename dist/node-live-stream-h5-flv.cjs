@@ -209,9 +209,11 @@ class LiveStream extends EventEmitter {
 
     stop(){
         console.log("index.mjs", "停止所有");
-        this.forwardStream.removeAllListeners();
-        this.forwardStream.child.kill();
-        this.wsServer.close();
+        if (this.forwardStream){
+            this.forwardStream.removeAllListeners();
+            this.forwardStream.child.kill();
+        }
+        if (this.wsServer) this.wsServer.close();
     }
 
     pipeStreamToSocketServer() {

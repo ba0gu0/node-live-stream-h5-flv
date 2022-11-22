@@ -7,3 +7,4 @@ yarn.lock
 .DS_Store
 /examples/ElectronApp/dist/
 /examples/ElectronApp/release/
+pnpm-lock.yaml

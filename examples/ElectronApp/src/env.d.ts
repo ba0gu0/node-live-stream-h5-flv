@@ -6,5 +6,5 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
-
 declare module '@cycjimmy/jsmpeg-player';
+declare module 'node-live-stream-h5-flv';

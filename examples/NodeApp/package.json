@@ -9,6 +9,6 @@
   "dependencies": {
     "ffmpeg-static": "^5.1.0",
     "http-server": "^14.1.1",
-    "node-live-stream-h5-flv": "^1.0.2"
+    "node-live-stream-h5-flv": "^1.0.3"
   }
 }
