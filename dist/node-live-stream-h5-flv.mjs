@@ -37,6 +37,10 @@ const makeForwardStreamFFmpegCmd =  (thit) => {
 
     if (thit.setFps){
         addSuffixFlags = [...addSuffixFlags, '-r', thit.setFps];
+    }else {
+        if (thit.streamInfo.fps < 20) {
+            addSuffixFlags = [...addSuffixFlags, '-r', '20'];
+        }
     }
 
     if (thit.streamInfo.codec === "h264"){
